@@ -1,0 +1,24 @@
+<div>
+    <!-- How much do you like this? (0-10)-->
+    <!-- What color would you relate this with? -->
+    <!-- How good/evil is this thing? (1-7)-->
+    <!-- Any additional comments? -->
+
+    <!-- TODO: this should basically just be a list/collection of sliders -->
+    <div id="ratings-list">
+        <div id="main-rating">
+            <div><b>Rating (0-10):</b></div>
+            <mat-slider min="0" max="10" step="1" (input)="updateRating($event)">
+                <input matSliderThumb>
+            </mat-slider>
+            <div>(Current: {{ rating }})</div>
+
+            <!-- TODO: let user's add a note to their rating -->
+        </div>
+    </div>
+
+    <!-- TODO: and a submit button -->
+    <button mat-raised-button (click)="submitRating()">
+        Submit Rating
+    </button>
+</div>

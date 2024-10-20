@@ -1,0 +1,8 @@
+#ratings-list div {
+    display: flex;
+    align-items: center;
+}
+
+#ratings-list div div {
+    padding: 0px 10px;
+}
