@@ -14,8 +14,9 @@ export class RatingComponent implements OnInit {
   rating: number = 0;
 
   ngOnInit(): void {
-    // check if existing rating (by this date)
-    localStorage.getItem("")
+    // check if existing rating (at this date)
+    // var temp = localStorage.getItem("test");
+    // console.log("Found: ", temp);
   }
 
   updateRating(event: Event) {
@@ -24,5 +25,6 @@ export class RatingComponent implements OnInit {
 
   submitRating() {
     console.log("Submitted rating: " + this.rating);
+    // localStorage.setItem("test", String(this.rating));
   }
 }
